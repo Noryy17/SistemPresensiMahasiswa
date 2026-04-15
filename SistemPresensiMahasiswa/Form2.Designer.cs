@@ -41,6 +41,7 @@
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnKelolaMahasiswa
             // 
@@ -61,6 +62,7 @@
             resources.ApplyResources(this.btnKelolaDosen, "btnKelolaDosen");
             this.btnKelolaDosen.Name = "btnKelolaDosen";
             this.btnKelolaDosen.UseVisualStyleBackColor = true;
+            this.btnKelolaDosen.Click += new System.EventHandler(this.btnKelolaDosen_Click);
             // 
             // btnGenerateLaporan
             // 

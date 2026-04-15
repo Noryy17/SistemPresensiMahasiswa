@@ -37,5 +37,18 @@ namespace SistemPresensiMahasiswa
             Login loginForm = new Login();
             loginForm.Show();
         }
+
+        private void btnKelolaDosen_Click(object sender, EventArgs e)
+        {
+            KelolaDosen kelolaDosenForm = new KelolaDosen();
+            kelolaDosenForm.Show();
+            this.Hide();
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
