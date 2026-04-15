@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemPresensiMahasiswa
 {
-    public partial class FoormDashboard : Form
+    public partial class DashboardAdmin : Form
     {
-        public FoormDashboard()
+        public DashboardAdmin()
         {
             InitializeComponent();
         }

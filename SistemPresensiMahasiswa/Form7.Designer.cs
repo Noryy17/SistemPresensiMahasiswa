@@ -1,6 +1,6 @@
 ﻿namespace SistemPresensiMahasiswa
 {
-    partial class Form7
+    partial class DashboardDosen
     {
         /// <summary>
         /// Required designer variable.
@@ -70,7 +70,7 @@
             this.button3.Text = "Logout";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // Form7
+            // DashboardDosen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -79,7 +79,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
-            this.Name = "Form7";
+            this.Name = "DashboardDosen";
             this.Text = "DashboardDosen";
             this.ResumeLayout(false);
             this.PerformLayout();
