@@ -45,6 +45,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.button4 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -153,6 +156,8 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.button4);
+            this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.textBox3);
             this.panel3.Location = new System.Drawing.Point(24, 439);
             this.panel3.Name = "panel3";
@@ -161,9 +166,9 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(76, 35);
+            this.textBox3.Location = new System.Drawing.Point(85, 31);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
+            this.textBox3.Size = new System.Drawing.Size(234, 22);
             this.textBox3.TabIndex = 0;
             // 
             // label6
@@ -202,11 +207,39 @@
             this.button3.Text = "Hapus";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(49, 430);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 16);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Pencarian Data";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(25, 34);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(34, 16);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Cari:";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(391, 23);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(97, 38);
+            this.button4.TabIndex = 2;
+            this.button4.Text = "Cari";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // SistemPresensiMahasiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1496, 580);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -246,5 +279,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button4;
     }
 }
