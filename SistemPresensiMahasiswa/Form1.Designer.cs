@@ -33,13 +33,13 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LabelPassword = new System.Windows.Forms.Label();
             this.PanelCard.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelCard
             // 
-            this.PanelCard.Controls.Add(this.label2);
+            this.PanelCard.Controls.Add(this.LabelPassword);
             this.PanelCard.Controls.Add(this.label1);
             this.PanelCard.Controls.Add(this.btnLogin);
             this.PanelCard.Controls.Add(this.txtPassword);
@@ -82,14 +82,15 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "username";
             // 
-            // label2
+            // LabelPassword
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(50, 118);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 16);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Password";
+            this.LabelPassword.AutoSize = true;
+            this.LabelPassword.Location = new System.Drawing.Point(47, 121);
+            this.LabelPassword.Name = "LabelPassword";
+            this.LabelPassword.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.LabelPassword.Size = new System.Drawing.Size(67, 16);
+            this.LabelPassword.TabIndex = 4;
+            this.LabelPassword.Text = "Password";
             // 
             // FormLogin
             // 
@@ -112,7 +113,7 @@
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.TextBox txtUsernameDosen;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LabelPassword;
         private System.Windows.Forms.Label label1;
     }
 }
