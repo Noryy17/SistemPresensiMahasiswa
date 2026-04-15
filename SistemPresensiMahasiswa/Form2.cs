@@ -16,5 +16,10 @@ namespace SistemPresensiMahasiswa
         {
             InitializeComponent();
         }
+
+        private void btnKelolaMahasiswa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
