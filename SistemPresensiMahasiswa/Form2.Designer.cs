@@ -69,6 +69,7 @@
             resources.ApplyResources(this.btnGenerateLaporan, "btnGenerateLaporan");
             this.btnGenerateLaporan.Name = "btnGenerateLaporan";
             this.btnGenerateLaporan.UseVisualStyleBackColor = true;
+            this.btnGenerateLaporan.Click += new System.EventHandler(this.btnGenerateLaporan_Click);
             // 
             // btnLogout
             // 

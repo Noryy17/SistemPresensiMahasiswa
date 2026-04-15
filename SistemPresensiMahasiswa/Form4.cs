@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -10,11 +11,22 @@ using System.Windows.Forms;
 
 namespace SistemPresensiMahasiswa
 {
-    public partial class Form4 : Form
+    public partial class GenerateLaporan : Form
     {
-        public Form4()
+        private readonly SqlConnection conn;
+        private readonly string connectionString =
+        "Data Source=VICTUS-PUNYA-LU\\LUTFI;Initial Catalog=SistemPresensiDB;Integrated Security=True";
+        public GenerateLaporan()
         {
             InitializeComponent();
+            conn = new SqlConnection(connectionString);
+        }
+
+        private void btnKembali_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            DashboardAdmin dashboardAdminForm = new DashboardAdmin();
+            dashboardAdminForm.Show();
         }
     }
 }

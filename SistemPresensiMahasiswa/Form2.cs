@@ -50,5 +50,12 @@ namespace SistemPresensiMahasiswa
         {
 
         }
+
+        private void btnGenerateLaporan_Click(object sender, EventArgs e)
+        {
+            GenerateLaporan generateLaporanForm = new GenerateLaporan();
+            generateLaporanForm.Show();
+            this.Hide();
+        }
     }
 }
