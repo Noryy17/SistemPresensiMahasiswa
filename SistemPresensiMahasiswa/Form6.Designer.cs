@@ -35,17 +35,24 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.ColKodeMk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColNamaMK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColSKS = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColKodeMk,
+            this.ColNamaMK,
+            this.ColSKS});
             this.dataGridView1.Location = new System.Drawing.Point(462, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(623, 550);
+            this.dataGridView1.Size = new System.Drawing.Size(428, 550);
             this.dataGridView1.TabIndex = 0;
             // 
             // textBox1
@@ -102,6 +109,27 @@
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // ColKodeMk
+            // 
+            this.ColKodeMk.HeaderText = "Kode_MK";
+            this.ColKodeMk.MinimumWidth = 6;
+            this.ColKodeMk.Name = "ColKodeMk";
+            this.ColKodeMk.Width = 125;
+            // 
+            // ColNamaMK
+            // 
+            this.ColNamaMK.HeaderText = "Nama_MK";
+            this.ColNamaMK.MinimumWidth = 6;
+            this.ColNamaMK.Name = "ColNamaMK";
+            this.ColNamaMK.Width = 125;
+            // 
+            // ColSKS
+            // 
+            this.ColSKS.HeaderText = "SKS";
+            this.ColSKS.MinimumWidth = 6;
+            this.ColSKS.Name = "ColSKS";
+            this.ColSKS.Width = 125;
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -131,5 +159,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColKodeMk;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColNamaMK;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColSKS;
     }
 }

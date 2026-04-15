@@ -48,6 +48,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
+            this.ColNim = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColNamaMahasiswa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColJurusan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -57,7 +60,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(662, 9);
+            this.label1.Location = new System.Drawing.Point(412, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(213, 16);
             this.label1.TabIndex = 0;
@@ -137,11 +140,15 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColNim,
+            this.ColNamaMahasiswa,
+            this.ColJurusan});
             this.dataGridView1.Location = new System.Drawing.Point(585, 57);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(899, 511);
+            this.dataGridView1.Size = new System.Drawing.Size(430, 511);
             this.dataGridView1.TabIndex = 3;
             // 
             // panel2
@@ -234,11 +241,32 @@
             this.button4.Text = "Cari";
             this.button4.UseVisualStyleBackColor = true;
             // 
+            // ColNim
+            // 
+            this.ColNim.HeaderText = "Nim";
+            this.ColNim.MinimumWidth = 6;
+            this.ColNim.Name = "ColNim";
+            this.ColNim.Width = 125;
+            // 
+            // ColNamaMahasiswa
+            // 
+            this.ColNamaMahasiswa.HeaderText = "Nama Mahasiswa";
+            this.ColNamaMahasiswa.MinimumWidth = 6;
+            this.ColNamaMahasiswa.Name = "ColNamaMahasiswa";
+            this.ColNamaMahasiswa.Width = 125;
+            // 
+            // ColJurusan
+            // 
+            this.ColJurusan.HeaderText = "Jurusan";
+            this.ColJurusan.MinimumWidth = 6;
+            this.ColJurusan.Name = "ColJurusan";
+            this.ColJurusan.Width = 125;
+            // 
             // SistemPresensiMahasiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1496, 580);
+            this.ClientSize = new System.Drawing.Size(1046, 580);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel3);
@@ -282,5 +310,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColNim;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColNamaMahasiswa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColJurusan;
     }
 }

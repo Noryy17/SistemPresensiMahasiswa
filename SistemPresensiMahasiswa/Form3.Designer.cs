@@ -36,17 +36,24 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.ColNip = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColNama = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColUsername = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ColNip,
+            this.ColNama,
+            this.ColUsername});
             this.dataGridView1.Location = new System.Drawing.Point(694, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(733, 543);
+            this.dataGridView1.Size = new System.Drawing.Size(429, 543);
             this.dataGridView1.TabIndex = 0;
             // 
             // textBox1
@@ -108,11 +115,32 @@
             this.button3.Text = "Hapus";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // ColNip
+            // 
+            this.ColNip.HeaderText = "Nip";
+            this.ColNip.MinimumWidth = 6;
+            this.ColNip.Name = "ColNip";
+            this.ColNip.Width = 125;
+            // 
+            // ColNama
+            // 
+            this.ColNama.HeaderText = "Nama";
+            this.ColNama.MinimumWidth = 6;
+            this.ColNama.Name = "ColNama";
+            this.ColNama.Width = 125;
+            // 
+            // ColUsername
+            // 
+            this.ColUsername.HeaderText = "Username";
+            this.ColUsername.MinimumWidth = 6;
+            this.ColUsername.Name = "ColUsername";
+            this.ColUsername.Width = 125;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1439, 567);
+            this.ClientSize = new System.Drawing.Size(1139, 567);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -139,5 +167,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColNip;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColNama;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColUsername;
     }
 }
