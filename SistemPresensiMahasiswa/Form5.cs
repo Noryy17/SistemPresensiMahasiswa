@@ -71,7 +71,7 @@ namespace SistemPresensiMahasiswa
 
                 if (result > 0)
                 {
-                    MessageBox.Show("Data Dosen berhasil ditambahkan");
+                    MessageBox.Show("Data Mahasiswa berhasil ditambahkan");
                     ClearForm();
                     btnLoad.PerformClick();
                 }

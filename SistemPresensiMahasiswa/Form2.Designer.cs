@@ -54,6 +54,7 @@
             resources.ApplyResources(this.btnKelolaMatakuliah, "btnKelolaMatakuliah");
             this.btnKelolaMatakuliah.Name = "btnKelolaMatakuliah";
             this.btnKelolaMatakuliah.UseVisualStyleBackColor = true;
+            this.btnKelolaMatakuliah.Click += new System.EventHandler(this.btnKelolaMatakuliah_Click);
             // 
             // btnKelolaDosen
             // 
@@ -72,6 +73,7 @@
             resources.ApplyResources(this.btnLogout, "btnLogout");
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // DashboardAdmin
             // 

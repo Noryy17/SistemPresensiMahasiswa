@@ -19,7 +19,23 @@ namespace SistemPresensiMahasiswa
 
         private void btnKelolaMahasiswa_Click(object sender, EventArgs e)
         {
+            KelolaMahasiswa kelolaMahaForm = new KelolaMahasiswa();
+            kelolaMahaForm.Show();
+            this.Hide(); // sembunyikan dashboard admin
+        }
 
+        private void btnKelolaMatakuliah_Click(object sender, EventArgs e)
+        {
+            KelolaMatKul kelolaMatkulForm = new KelolaMatKul();
+            kelolaMatkulForm.Show();
+            this.Hide();
+        }
+
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login loginForm = new Login();
+            loginForm.Show();
         }
     }
 }

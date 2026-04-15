@@ -1,6 +1,6 @@
 ﻿namespace SistemPresensiMahasiswa
 {
-    partial class Form6
+    partial class KelolaMatKul
     {
         /// <summary>
         /// Required designer variable.
@@ -29,120 +29,150 @@
         private void InitializeComponent()
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.ColKodeMk = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColNamaMK = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColSKS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtKodeMK = new System.Windows.Forms.TextBox();
+            this.txtNamaMK = new System.Windows.Forms.TextBox();
+            this.btnTambah = new System.Windows.Forms.Button();
+            this.btnHapus = new System.Windows.Forms.Button();
+            this.btnUbah = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtSKS = new System.Windows.Forms.TextBox();
+            this.btnLoad = new System.Windows.Forms.Button();
+            this.btnKembali = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ColKodeMk,
-            this.ColNamaMK,
-            this.ColSKS});
-            this.dataGridView1.Location = new System.Drawing.Point(462, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(500, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(428, 550);
+            this.dataGridView1.Size = new System.Drawing.Size(439, 550);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // textBox1
+            // txtKodeMK
             // 
-            this.textBox1.Location = new System.Drawing.Point(47, 47);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(266, 22);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "kode_Mk";
+            this.txtKodeMK.Location = new System.Drawing.Point(160, 62);
+            this.txtKodeMK.Name = "txtKodeMK";
+            this.txtKodeMK.Size = new System.Drawing.Size(266, 22);
+            this.txtKodeMK.TabIndex = 1;
             // 
-            // textBox2
+            // txtNamaMK
             // 
-            this.textBox2.Location = new System.Drawing.Point(47, 120);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(266, 22);
-            this.textBox2.TabIndex = 2;
-            this.textBox2.Text = "Nama_Mk";
-            this.textBox2.UseWaitCursor = true;
+            this.txtNamaMK.Location = new System.Drawing.Point(160, 116);
+            this.txtNamaMK.Name = "txtNamaMK";
+            this.txtNamaMK.Size = new System.Drawing.Size(266, 22);
+            this.txtNamaMK.TabIndex = 2;
+            this.txtNamaMK.UseWaitCursor = true;
             // 
-            // comboBox1
+            // btnTambah
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(47, 200);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(266, 24);
-            this.comboBox1.TabIndex = 3;
-            this.comboBox1.Text = "Sks";
-            this.comboBox1.UseWaitCursor = true;
+            this.btnTambah.Location = new System.Drawing.Point(81, 256);
+            this.btnTambah.Name = "btnTambah";
+            this.btnTambah.Size = new System.Drawing.Size(88, 39);
+            this.btnTambah.TabIndex = 4;
+            this.btnTambah.Text = "Tambah";
+            this.btnTambah.UseVisualStyleBackColor = true;
+            this.btnTambah.Click += new System.EventHandler(this.btnTambah_Click);
             // 
-            // button1
+            // btnHapus
             // 
-            this.button1.Location = new System.Drawing.Point(47, 271);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 39);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnHapus.Location = new System.Drawing.Point(81, 346);
+            this.btnHapus.Name = "btnHapus";
+            this.btnHapus.Size = new System.Drawing.Size(86, 39);
+            this.btnHapus.TabIndex = 5;
+            this.btnHapus.Text = "Hapus";
+            this.btnHapus.UseVisualStyleBackColor = true;
+            this.btnHapus.Click += new System.EventHandler(this.btnHapus_Click);
             // 
-            // button2
+            // btnUbah
             // 
-            this.button2.Location = new System.Drawing.Point(160, 271);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(86, 39);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnUbah.Location = new System.Drawing.Point(253, 256);
+            this.btnUbah.Name = "btnUbah";
+            this.btnUbah.Size = new System.Drawing.Size(82, 39);
+            this.btnUbah.TabIndex = 6;
+            this.btnUbah.Text = "Ubah";
+            this.btnUbah.UseVisualStyleBackColor = true;
+            this.btnUbah.Click += new System.EventHandler(this.btnUbah_Click);
             // 
-            // button3
+            // label1
             // 
-            this.button3.Location = new System.Drawing.Point(271, 271);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(82, 39);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(83, 65);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 16);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Kode_MK :";
             // 
-            // ColKodeMk
+            // label2
             // 
-            this.ColKodeMk.HeaderText = "Kode_MK";
-            this.ColKodeMk.MinimumWidth = 6;
-            this.ColKodeMk.Name = "ColKodeMk";
-            this.ColKodeMk.Width = 125;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(115, 174);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 16);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "SKS :";
             // 
-            // ColNamaMK
+            // label3
             // 
-            this.ColNamaMK.HeaderText = "Nama_MK";
-            this.ColNamaMK.MinimumWidth = 6;
-            this.ColNamaMK.Name = "ColNamaMK";
-            this.ColNamaMK.Width = 125;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(78, 119);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(76, 16);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Nama_MK :";
             // 
-            // ColSKS
+            // txtSKS
             // 
-            this.ColSKS.HeaderText = "SKS";
-            this.ColSKS.MinimumWidth = 6;
-            this.ColSKS.Name = "ColSKS";
-            this.ColSKS.Width = 125;
+            this.txtSKS.Location = new System.Drawing.Point(160, 168);
+            this.txtSKS.Name = "txtSKS";
+            this.txtSKS.Size = new System.Drawing.Size(266, 22);
+            this.txtSKS.TabIndex = 10;
+            this.txtSKS.UseWaitCursor = true;
             // 
-            // Form6
+            // btnLoad
+            // 
+            this.btnLoad.Location = new System.Drawing.Point(253, 346);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(82, 39);
+            this.btnLoad.TabIndex = 11;
+            this.btnLoad.Text = "Load";
+            this.btnLoad.UseVisualStyleBackColor = true;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
+            // 
+            // btnKembali
+            // 
+            this.btnKembali.BackColor = System.Drawing.Color.Red;
+            this.btnKembali.Location = new System.Drawing.Point(302, 457);
+            this.btnKembali.Name = "btnKembali";
+            this.btnKembali.Size = new System.Drawing.Size(99, 40);
+            this.btnKembali.TabIndex = 12;
+            this.btnKembali.Text = "Kembali";
+            this.btnKembali.UseVisualStyleBackColor = false;
+            this.btnKembali.Click += new System.EventHandler(this.btnKembali_Click);
+            // 
+            // KelolaMatKul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1118, 589);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(967, 589);
+            this.Controls.Add(this.btnKembali);
+            this.Controls.Add(this.btnLoad);
+            this.Controls.Add(this.txtSKS);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btnUbah);
+            this.Controls.Add(this.btnHapus);
+            this.Controls.Add(this.btnTambah);
+            this.Controls.Add(this.txtNamaMK);
+            this.Controls.Add(this.txtKodeMK);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Form6";
+            this.Name = "KelolaMatKul";
             this.Text = "Kelola Data Matakuliah";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -153,14 +183,16 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColKodeMk;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColNamaMK;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColSKS;
+        private System.Windows.Forms.TextBox txtKodeMK;
+        private System.Windows.Forms.TextBox txtNamaMK;
+        private System.Windows.Forms.Button btnTambah;
+        private System.Windows.Forms.Button btnHapus;
+        private System.Windows.Forms.Button btnUbah;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtSKS;
+        private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.Button btnKembali;
     }
 }
