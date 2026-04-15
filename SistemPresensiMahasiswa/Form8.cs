@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace SistemPresensiMahasiswa
 {
-    public partial class Form8 : Form
+    public partial class InputPresensi : Form
     {
-        public Form8()
+        public InputPresensi()
         {
             InitializeComponent();
+        }
+
+        private void btnKembali_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            DashboardDosen dashboardDosen = new DashboardDosen();
+            dashboardDosen.Show();
         }
     }
 }

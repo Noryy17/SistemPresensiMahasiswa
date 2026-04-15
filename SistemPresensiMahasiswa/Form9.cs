@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace SistemPresensiMahasiswa
 {
-    public partial class Form9 : Form
+    public partial class RekapPresensi : Form
     {
-        public Form9()
+        public RekapPresensi()
         {
             InitializeComponent();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnKembali_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            DashboardDosen dashboardDosen = new DashboardDosen();
+            dashboardDosen.Show();
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace SistemPresensiMahasiswa
 {
-    partial class Form8
+    partial class InputPresensi
     {
         /// <summary>
         /// Required designer variable.
@@ -35,27 +35,28 @@
             this.ColNim = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColNama = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColStatusPresensi = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.btnKembali = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(30, 32);
+            this.comboBox1.Location = new System.Drawing.Point(461, 169);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(235, 24);
             this.comboBox1.TabIndex = 0;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(539, 33);
+            this.dateTimePicker1.Location = new System.Drawing.Point(496, 95);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
             this.dateTimePicker1.TabIndex = 1;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1003, 22);
+            this.button1.Location = new System.Drawing.Point(530, 254);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(166, 43);
             this.button1.TabIndex = 2;
@@ -69,11 +70,11 @@
             this.ColNim,
             this.ColNama,
             this.ColStatusPresensi});
-            this.dataGridView1.Location = new System.Drawing.Point(40, 145);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 33);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1139, 342);
+            this.dataGridView1.Size = new System.Drawing.Size(430, 471);
             this.dataGridView1.TabIndex = 3;
             // 
             // ColNim
@@ -97,16 +98,28 @@
             this.ColStatusPresensi.Name = "ColStatusPresensi";
             this.ColStatusPresensi.Width = 125;
             // 
-            // Form8
+            // btnKembali
+            // 
+            this.btnKembali.BackColor = System.Drawing.Color.Red;
+            this.btnKembali.Location = new System.Drawing.Point(530, 389);
+            this.btnKembali.Name = "btnKembali";
+            this.btnKembali.Size = new System.Drawing.Size(121, 34);
+            this.btnKembali.TabIndex = 4;
+            this.btnKembali.Text = "Kembali";
+            this.btnKembali.UseVisualStyleBackColor = false;
+            this.btnKembali.Click += new System.EventHandler(this.btnKembali_Click);
+            // 
+            // InputPresensi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1237, 533);
+            this.ClientSize = new System.Drawing.Size(758, 533);
+            this.Controls.Add(this.btnKembali);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.comboBox1);
-            this.Name = "Form8";
+            this.Name = "InputPresensi";
             this.Text = "FormInputPresensi";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -122,5 +135,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ColNim;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColNama;
         private System.Windows.Forms.DataGridViewComboBoxColumn ColStatusPresensi;
+        private System.Windows.Forms.Button btnKembali;
     }
 }
