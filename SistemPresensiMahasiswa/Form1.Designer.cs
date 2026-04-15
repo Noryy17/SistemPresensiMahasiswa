@@ -100,7 +100,7 @@
             this.Controls.Add(this.PanelCard);
             this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Login";
             this.PanelCard.ResumeLayout(false);
             this.PanelCard.PerformLayout();
             this.ResumeLayout(false);
