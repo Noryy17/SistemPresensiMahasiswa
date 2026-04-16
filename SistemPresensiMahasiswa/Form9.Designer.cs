@@ -35,9 +35,13 @@
             this.ColHadir = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColIzin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColSakit = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColAlpa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
+            this.lblMk = new System.Windows.Forms.Label();
+            this.lblDari = new System.Windows.Forms.Label();
+            this.lblSampai = new System.Windows.Forms.Label();
             this.btnKembali = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +54,33 @@
             this.comboBox1.Size = new System.Drawing.Size(216, 24);
             this.comboBox1.TabIndex = 0;
             // 
+            // lblMk
+            // 
+            this.lblMk.AutoSize = true;
+            this.lblMk.Location = new System.Drawing.Point(12, 56);
+            this.lblMk.Name = "lblMk";
+            this.lblMk.Size = new System.Drawing.Size(78, 16);
+            this.lblMk.TabIndex = 6;
+            this.lblMk.Text = "Mata kuliah";
+            // 
+            // lblDari
+            // 
+            this.lblDari.AutoSize = true;
+            this.lblDari.Location = new System.Drawing.Point(12, 129);
+            this.lblDari.Name = "lblDari";
+            this.lblDari.Size = new System.Drawing.Size(80, 16);
+            this.lblDari.TabIndex = 7;
+            this.lblDari.Text = "Dari tanggal";
+            // 
+            // lblSampai
+            // 
+            this.lblSampai.AutoSize = true;
+            this.lblSampai.Location = new System.Drawing.Point(12, 213);
+            this.lblSampai.Name = "lblSampai";
+            this.lblSampai.Size = new System.Drawing.Size(99, 16);
+            this.lblSampai.TabIndex = 8;
+            this.lblSampai.Text = "Sampai tanggal";
+            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -58,7 +89,8 @@
             this.ColNama,
             this.ColHadir,
             this.ColIzin,
-            this.ColSakit});
+            this.ColSakit,
+            this.ColAlpa});
             this.dataGridView1.Location = new System.Drawing.Point(482, 31);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -102,6 +134,13 @@
             this.ColSakit.Name = "ColSakit";
             this.ColSakit.Width = 125;
             // 
+            // ColAlpa
+            // 
+            this.ColAlpa.HeaderText = "Alpa";
+            this.ColAlpa.MinimumWidth = 6;
+            this.ColAlpa.Name = "ColAlpa";
+            this.ColAlpa.Width = 125;
+            // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(111, 126);
@@ -122,8 +161,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(146, 23);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Template Rekap";
+            this.button1.Text = "Tampilkan";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnKembali
             // 
@@ -141,6 +181,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1271, 500);
+            this.Controls.Add(this.lblSampai);
+            this.Controls.Add(this.lblDari);
+            this.Controls.Add(this.lblMk);
             this.Controls.Add(this.btnKembali);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker2);
@@ -161,11 +204,15 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label lblMk;
+        private System.Windows.Forms.Label lblDari;
+        private System.Windows.Forms.Label lblSampai;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColNim;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColNama;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColHadir;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColIzin;
         private System.Windows.Forms.DataGridViewTextBoxColumn ColSakit;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ColAlpa;
         private System.Windows.Forms.Button btnKembali;
     }
 }

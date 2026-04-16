@@ -15,7 +15,7 @@ namespace SistemPresensiMahasiswa
     {
         private readonly SqlConnection conn;
         private readonly string connectionString =
-        "Data Source=VICTUS-PUNYA-LU\\LUTFI;Initial Catalog=SistemPresensiDB;Integrated Security=True";
+        "Data Source=.\\RIZQIHUDAYA;Initial Catalog=SistemPresensiDB;Integrated Security=True";
         public Login()
         {
             InitializeComponent();
@@ -46,7 +46,7 @@ namespace SistemPresensiMahasiswa
                     SqlDataReader readerAdmin = cmdAdmin.ExecuteReader();
                     if (readerAdmin.HasRows)
                     {
-                        // Login sebagai Admin
+                        Sesi.IdDosen = 0;
                         readerAdmin.Close();
                         conn.Close();
 
@@ -66,9 +66,9 @@ namespace SistemPresensiMahasiswa
                     cmdDosen.Parameters.AddWithValue("@password", password);
 
                     SqlDataReader readerDosen = cmdDosen.ExecuteReader();
-                    if (readerDosen.HasRows)
+                    if (readerDosen.Read())
                     {
-                        // Login sebagai Dosen
+                        Sesi.IdDosen = Convert.ToInt32(readerDosen["id_dosen"]);
                         readerDosen.Close();
                         conn.Close();
 
@@ -87,6 +87,11 @@ namespace SistemPresensiMahasiswa
             {
                 MessageBox.Show("Terjadi kesalahan: " + ex.Message);
             }
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

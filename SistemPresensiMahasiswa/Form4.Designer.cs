@@ -45,20 +45,19 @@
             // comboBox1
             // 
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(37, 53);
+            this.comboBox1.Location = new System.Drawing.Point(12, 12);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(184, 24);
             this.comboBox1.TabIndex = 0;
-            this.comboBox1.Text = "Pemrograman Dasar";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(296, 53);
+            this.comboBox2.Location = new System.Drawing.Point(12, 56);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(222, 24);
+            this.comboBox2.Size = new System.Drawing.Size(184, 24);
             this.comboBox2.TabIndex = 1;
-            this.comboBox2.Text = "Dr. Ir. Dwijoko Purbohadi, M.T";
             // 
             // dataGridView1
             // 
@@ -68,11 +67,11 @@
             this.ColNim,
             this.ColNama,
             this.ColStatus});
-            this.dataGridView1.Location = new System.Drawing.Point(594, 32);
+            this.dataGridView1.Location = new System.Drawing.Point(321, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(555, 525);
+            this.dataGridView1.Size = new System.Drawing.Size(816, 525);
             this.dataGridView1.TabIndex = 2;
             // 
             // ColTanggal
@@ -105,14 +104,14 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(37, 171);
+            this.dateTimePicker1.Location = new System.Drawing.Point(12, 102);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(189, 22);
             this.dateTimePicker1.TabIndex = 3;
             // 
             // btnGenerate
             // 
-            this.btnGenerate.Location = new System.Drawing.Point(37, 265);
+            this.btnGenerate.Location = new System.Drawing.Point(12, 198);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(143, 53);
             this.btnGenerate.TabIndex = 5;
@@ -121,15 +120,15 @@
             // 
             // dateTimePicker3
             // 
-            this.dateTimePicker3.Location = new System.Drawing.Point(318, 171);
+            this.dateTimePicker3.Location = new System.Drawing.Point(12, 140);
             this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker3.Size = new System.Drawing.Size(189, 22);
             this.dateTimePicker3.TabIndex = 6;
             // 
             // btnKembali
             // 
             this.btnKembali.BackColor = System.Drawing.Color.Red;
-            this.btnKembali.Location = new System.Drawing.Point(381, 265);
+            this.btnKembali.Location = new System.Drawing.Point(12, 284);
             this.btnKembali.Name = "btnKembali";
             this.btnKembali.Size = new System.Drawing.Size(137, 53);
             this.btnKembali.TabIndex = 7;

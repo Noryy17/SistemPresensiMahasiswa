@@ -48,6 +48,9 @@
             this.txtJurusan = new System.Windows.Forms.TextBox();
             this.btnKembali = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
+            this.lblCari = new System.Windows.Forms.Label();
+            this.txtCari = new System.Windows.Forms.TextBox();
+            this.btnCari = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -133,11 +136,11 @@
             this.ColNim,
             this.ColNamaMahasiswa,
             this.ColJurusan});
-            this.dataGridView1.Location = new System.Drawing.Point(585, 57);
+            this.dataGridView1.Location = new System.Drawing.Point(585, 86);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(430, 511);
+            this.dataGridView1.Size = new System.Drawing.Size(430, 482);
             this.dataGridView1.TabIndex = 3;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -241,11 +244,40 @@
             this.btnLoad.UseVisualStyleBackColor = true;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
+            // lblCari
+            // 
+            this.lblCari.AutoSize = true;
+            this.lblCari.Location = new System.Drawing.Point(582, 33);
+            this.lblCari.Name = "lblCari";
+            this.lblCari.Size = new System.Drawing.Size(140, 16);
+            this.lblCari.TabIndex = 8;
+            this.lblCari.Text = "Cari NIM / nama / jurusan";
+            // 
+            // txtCari
+            // 
+            this.txtCari.Location = new System.Drawing.Point(585, 52);
+            this.txtCari.Name = "txtCari";
+            this.txtCari.Size = new System.Drawing.Size(280, 22);
+            this.txtCari.TabIndex = 9;
+            // 
+            // btnCari
+            // 
+            this.btnCari.Location = new System.Drawing.Point(880, 48);
+            this.btnCari.Name = "btnCari";
+            this.btnCari.Size = new System.Drawing.Size(75, 28);
+            this.btnCari.TabIndex = 10;
+            this.btnCari.Text = "Cari";
+            this.btnCari.UseVisualStyleBackColor = true;
+            this.btnCari.Click += new System.EventHandler(this.btnCari_Click);
+            // 
             // KelolaMahasiswa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1046, 580);
+            this.Controls.Add(this.btnCari);
+            this.Controls.Add(this.txtCari);
+            this.Controls.Add(this.lblCari);
             this.Controls.Add(this.btnKembali);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel2);
@@ -286,5 +318,8 @@
         private System.Windows.Forms.TextBox txtJurusan;
         private System.Windows.Forms.Button btnKembali;
         private System.Windows.Forms.Button btnLoad;
+        private System.Windows.Forms.Label lblCari;
+        private System.Windows.Forms.TextBox txtCari;
+        private System.Windows.Forms.Button btnCari;
     }
 }

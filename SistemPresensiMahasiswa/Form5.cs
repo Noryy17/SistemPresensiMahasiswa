@@ -15,7 +15,7 @@ namespace SistemPresensiMahasiswa
     {
         private readonly SqlConnection conn;
         private readonly string connectionString =
-        "Data Source=VICTUS-PUNYA-LU\\LUTFI;Initial Catalog=SistemPresensiDB;Integrated Security=True";
+        "Data Source=.\\RIZQIHUDAYA;Initial Catalog=SistemPresensiDB;Integrated Security=True";
         public KelolaMahasiswa()
         {
             InitializeComponent();
@@ -168,6 +168,16 @@ namespace SistemPresensiMahasiswa
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
+            MuatMahasiswa(txtCari.Text.Trim());
+        }
+
+        private void btnCari_Click(object sender, EventArgs e)
+        {
+            MuatMahasiswa(txtCari.Text.Trim());
+        }
+
+        private void MuatMahasiswa(string kataKunci)
+        {
             try
             {
                 if (conn.State == System.Data.ConnectionState.Closed)
@@ -179,12 +189,19 @@ namespace SistemPresensiMahasiswa
                 dataGridView1.Columns.Clear();
 
                 dataGridView1.Columns.Add("NIM", "NIM");
-                dataGridView1.Columns.Add("nama", "nama");
-                dataGridView1.Columns.Add("jurusan", "jurusan");
+                dataGridView1.Columns.Add("Nama", "Nama");
+                dataGridView1.Columns.Add("Jurusan", "Jurusan");
 
                 string query = "SELECT * FROM Mahasiswa";
+                if (kataKunci.Length > 0)
+                {
+                    query += " WHERE nim LIKE @c OR nama LIKE @c OR jurusan LIKE @c";
+                }
 
                 SqlCommand cmd = new SqlCommand(query, conn);
+                if (kataKunci.Length > 0)
+                    cmd.Parameters.AddWithValue("@c", "%" + kataKunci + "%");
+
                 SqlDataReader reader = cmd.ExecuteReader();
 
                 while (reader.Read())
